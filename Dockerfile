@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 
-COPY ./ubuntu.sources /etc/apt/sources.list.d/ubuntu.sources
+# COPY ./ubuntu.sources /etc/apt/sources.list.d/ubuntu.sources
 
 RUN apt update -y 
 
