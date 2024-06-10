@@ -10,6 +10,6 @@ RUN apt-get update -y
 
 RUN apt-get upgrade -y
 
-RUN apt install texlive-full -y
-
 RUN apt-get install sudo -y
+
+RUN apt install texlive-full -y
