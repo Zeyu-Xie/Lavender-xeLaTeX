@@ -1,4 +1,4 @@
-name: ci
+name: Build and Push Docker Image
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
           version: "lab:latest"
           driver: cloud
           endpoint: "acanxie/sharon"
-      - name: Build and push
+      - name: Build and Push
         uses: docker/build-push-action@v5
         with:
           context: .
