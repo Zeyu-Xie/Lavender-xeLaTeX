@@ -1,6 +1,12 @@
 FROM ubuntu:24.04
 
-# COPY ./ubuntu.sources /etc/apt/sources.list.d/ubuntu.sources
+LABEL org.opencontainers.image.title="xelatex" \
+    org.opencontainers.image.authors="Acan Xie" \
+    org.opencontainers.image.description="Docker image of full texlive with xelatex" \
+    org.opencontainers.image.version="1.4.0" \
+    org.opencontainers.image.url="https://hub.docker.com/repository/docker/acanxie/xelatex/general" \
+    org.opencontainers.image.licenses="MIT" \
+    org.opencontainers.image.vendor="Acan Xie"
 
 # Update and Upgrade
 RUN apt update -y \
