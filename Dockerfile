@@ -16,3 +16,12 @@ RUN apt update -y \
 
 # Install Texlive
 RUN apt install texlive-full -y
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the entrypoint script
+COPY compile.sh /app/compile.sh
+
+# Set the entrypoint
+CMD [ "sh", "compile.sh" ]
