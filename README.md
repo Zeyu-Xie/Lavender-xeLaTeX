@@ -19,5 +19,5 @@ docker build -t [iamge_name] .
 Make sure you're running the docker image in the directory where the `.tex` file is located, since this version temporarily doesn't support the `path` parameter.
 
 ```zsh
-docker run --rm -i -t -v .:/workdir --env title= [The file name (.tex excluded)] [container name]
+docker run --rm -it -v .:/workdir --env title= [The file name (.tex excluded)] [container name]
 ```
