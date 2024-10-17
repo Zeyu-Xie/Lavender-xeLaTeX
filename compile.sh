@@ -3,6 +3,6 @@
 cd /workdir
 
 xelatex -output-directory=. $title.tex
-biber $title.aux
+biber $title
 xelatex -output-directory=. $title.tex
 xelatex -output-directory=. $title.tex
