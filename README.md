@@ -10,4 +10,4 @@ which will directly compile your `[tex filename].tex` file.
 
 ## Notices
 
-References are managed by command `biber [tex filename]` so do not use `bibtex`
+- References are managed by command `biber [tex filename]` so do not use `bibtex`
