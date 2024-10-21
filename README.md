@@ -1,23 +1,13 @@
-# Lavender-LaTeX
+# acanxie/xelatex
 
-This Docker image is built on Ubuntu and contains full TexLive components.
+Run the image with the following command in the same directory as the tex file
 
-## Docker Pull Command
-
-```zsh
-docker pull acanxie/xelatex
+```
+docker run --rm -it -v .:/workdir --env title=[tex filename] acanxie/xelatex:[tag]
 ```
 
-## Docker build
+which will directly compile your `[tex filename].tex` file.
 
-```zsh
-docker build -t [iamge_name] .
-```
+## Notices
 
-## Docker run
-
-Make sure you're running the docker image in the directory where the `.tex` file is located, since this version temporarily doesn't support the `path` parameter.
-
-```zsh
-docker run --rm -it -v .:/workdir --env title= [The file name (.tex excluded)] [container name]
-```
+References are managed by command `biber [tex filename]` so do not use `bibtex`
