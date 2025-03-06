@@ -20,8 +20,8 @@ RUN apt install texlive-full -y
 # Set the working directory
 WORKDIR /app
 
-# Copy the entrypoint script
-COPY compile.sh /app/compile.sh
+# No need to copy the compile script
+# COPY compile.sh /app/compile.sh
 
-# Set the entrypoint
-CMD [ "sh", "compile.sh" ]
+# No entrypoint
+# CMD [ "sh", "compile.sh" ]
