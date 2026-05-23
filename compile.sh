@@ -2,7 +2,7 @@
 
 cd /workdir
 
-xelatex -output-directory=. $title.tex
+xelatex -output-directory=. -shell-escape $title.tex
 biber $title
-xelatex -output-directory=. $title.tex
-xelatex -output-directory=. $title.tex
+xelatex -output-directory=. -shell-escape $title.tex
+xelatex -output-directory=. -shell-escape $title.tex
