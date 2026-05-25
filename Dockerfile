@@ -15,7 +15,9 @@ RUN apt update -y \
     && apt-get upgrade -y
 
 # Install Texlive
-RUN apt install texlive-full -y
+RUN apt install -y \
+    texlive-full \
+    inkscape
 
 # Set the working directory
 WORKDIR /app
